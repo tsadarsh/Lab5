@@ -4,11 +4,9 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Set the required CUDA version (optional)
-set(CMAKE_CUDA_STANDARD 11)
 
 # Project name
-project(Lab5 LANGUAGES CXX CUDA)
+project(Lab5 LANGUAGES CXX)
 
 #find OPENMP
 find_package(OpenMP)
@@ -25,8 +23,8 @@ link_directories(${PROJECT_SOURCE_DIR}/../SFML/lib)
 add_executable(talker src/talker.cpp)
 add_executable(listener src/listener.cpp)
 
-#file(COPY ${PROJECT_SOURCE_DIR}/white.png
-#  DESTINATION "${COMMON_OUTPUT_DIR}/bin")
+file(COPY ${PROJECT_SOURCE_DIR}/robot.png
+  DESTINATION "${COMMON_OUTPUT_DIR}/bin")
   
 # Link SFML libraries
 #target_link_libraries(talker sfml-graphics sfml-window sfml-system)
