@@ -28,8 +28,11 @@ int main()
         {
             std::cout << "Error sending command!" << std::endl;
         }
-    }
-
-
+		if (cmd == 'q')
+		{
+			std::cout << "Quitting!" << std::endl;
+			return 0;
+		}
+	}
     return 0;
 }

@@ -81,6 +81,10 @@ int main()
             case 'h':
                 speed = std::max(1, speed - 1);
                 break;
+			case 'q':
+				std::cout << "Client is disconnecting!" << std::endl;	
+				sim_start = false;
+				break;
             default:
                 break;
             }
