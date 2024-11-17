@@ -1,11 +1,3 @@
-/*
-Author: Adarsh TS
-Class: ECE6122 A
-Last Date Modified: Nov 16, 2025 
-Description:
-This files acts as the client code that sends commands to control the robot
-*/
-
 #include <iostream>
 
 #include <SFML/Network/UdpSocket.hpp>
